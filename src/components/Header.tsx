@@ -24,9 +24,6 @@ function Header({ theme, onThemeChange }: HeaderProps) {
   return (
     <header className="header">
       <div className="brand">
-        <NavLink to="/login" replace>
-          Dashboard
-        </NavLink>
         <span className="brand-label">Patrick Nomentsoa </span>
         <TypingText
           words={[String(t("header.role")), ...(t("hero.typing") as string[])]}
